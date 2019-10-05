@@ -10,7 +10,7 @@ GameOverScene::GameOverScene()
 
 void GameOverScene::onUpdate()
 {
-	if (Input::isDown(Key::Enter)) {
+	if (Input::isDown(KeyCode::Enter)) {
 		SceneManager::enter(gcnew GameScene());
 	}
 }
