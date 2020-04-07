@@ -12,10 +12,12 @@ void Bullet::move()
 {
 	this->setPosX(getPosX() + speed * cos(degree));
 	this->setPosY(getPosY() + speed * sin(degree));
-	if ((this->getPosY() >= Window::getHeight() - 6) || this->getPosY() < 6) {
+	if ((this->getPosY() >= Window::getHeight() - 6) || this->getPosY() < 6)
+	{
 		degree = -degree;
 	}
-	if ((this->getPosX() <= 6) || this->getPosX() >= Window::getWidth() - 6) {
+	if ((this->getPosX() <= 6) || this->getPosX() >= Window::getWidth() - 6)
+	{
 		degree = M_PI - degree;
 	}
 }
