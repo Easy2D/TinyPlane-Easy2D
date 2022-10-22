@@ -9,13 +9,14 @@ Plane::Plane() : dirction(0)
 
 void Plane::move(int dirction)
 {
+	float distance = speed * Time::getDeltaTime();
 	switch (dirction)
 	{
 	case 1:
 	{
 		if (this->getPosY() > this->getWidth() / 2)
 		{
-			this->movePosY(-speed);
+			this->movePosY(-distance);
 		}
 		break;
 	}
@@ -23,7 +24,7 @@ void Plane::move(int dirction)
 	{
 		if (this->getPosX() < Window::getWidth() - this->getWidth() / 2)
 		{
-			this->movePosX(speed);
+			this->movePosX(distance);
 		}
 		break;
 	}
@@ -31,7 +32,7 @@ void Plane::move(int dirction)
 	{
 		if (this->getPosY() < Window::getHeight() - this->getHeight() / 2)
 		{
-			this->movePosY(speed);
+			this->movePosY(distance);
 		}
 		break;
 	}
@@ -39,7 +40,7 @@ void Plane::move(int dirction)
 	{
 		if (this->getPosX() > this->getWidth() / 2)
 		{
-			this->movePosX(-speed);
+			this->movePosX(-distance);
 		}
 		break;
 	}

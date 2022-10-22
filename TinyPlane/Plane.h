@@ -7,7 +7,7 @@ class Plane : public Sprite
 {
 public:
 	int dirction;//1 2 3 4 иосробвС
-	float speed = 4;
+	float speed = 240;
 
 	Plane();
 

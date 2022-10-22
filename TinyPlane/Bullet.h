@@ -9,7 +9,7 @@ class Bullet : public Sprite
 {
 public:
 	float degree;
-	float speed = 1.5;
+	float speed = 90;
 
 	Bullet();
 

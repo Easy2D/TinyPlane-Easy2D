@@ -10,8 +10,9 @@ Bullet::Bullet() : Sprite(L"img/bullet.png")
 
 void Bullet::move()
 {
-	this->setPosX(getPosX() + speed * cos(degree));
-	this->setPosY(getPosY() + speed * sin(degree));
+	float distance = speed * Time::getDeltaTime();
+	this->setPosX(getPosX() + distance * cos(degree));
+	this->setPosY(getPosY() + distance * sin(degree));
 	if ((this->getPosY() >= Window::getHeight() - 6) || this->getPosY() < 6)
 	{
 		degree = -degree;

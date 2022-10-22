@@ -19,19 +19,19 @@ GameScene::GameScene()
 
 void GameScene::onUpdate()
 {
-	if (Input::isDown(KeyCode::S))
+	if (Input::isDown(KeyCode::S) || Input::isDown(KeyCode::Down))
 	{
 		plane->move(3);
 	}
-	if (Input::isDown(KeyCode::W))
+	if (Input::isDown(KeyCode::W) || Input::isDown(KeyCode::Up))
 	{
 		plane->move(1);
 	}
-	if (Input::isDown(KeyCode::A))
+	if (Input::isDown(KeyCode::A) || Input::isDown(KeyCode::Left))
 	{
 		plane->move(4);
 	}
-	if (Input::isDown(KeyCode::D))
+	if (Input::isDown(KeyCode::D) || Input::isDown(KeyCode::Right))
 	{
 		plane->move(2);
 	}
