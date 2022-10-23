@@ -3,7 +3,7 @@
 
 GameScene::GameScene()
 {
-	auto background = gcnew Sprite(L"img/bg.jpg");
+	auto background = gcnew Sprite("img/bg.jpg");
 	this->addChild(background);
 
 	plane = gcnew Plane();

@@ -2,7 +2,7 @@
 
 Plane::Plane() : dirction(0)
 {
-	this->open(L"img/plane.png");
+	this->open("img/plane.png");
 	this->setAnchor(0.5f, 0.5f);
 	this->setPos(this->getWidth() / 2, this->getHeight() / 2);
 }

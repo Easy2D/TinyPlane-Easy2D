@@ -1,7 +1,7 @@
 #include <corecrt_math.h>
 #include "Bullet.h"
 
-Bullet::Bullet() : Sprite(L"img/bullet.png")
+Bullet::Bullet() : Sprite("img/bullet.png")
 {
 	this->setAnchor(0.5f, 0.5f);
 	this->setPos(200, 200);

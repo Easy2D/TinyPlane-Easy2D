@@ -4,7 +4,7 @@
 GameOverScene::GameOverScene()
 {
 	// ±³¾°Í¼Æ¬
-	auto background = gcnew Sprite(L"img/gameover.png");
+	auto background = gcnew Sprite("img/gameover.png");
 	this->addChild(background);
 }
 

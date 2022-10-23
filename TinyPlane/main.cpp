@@ -1,7 +1,7 @@
 //---------------------------------------------------------
 // 程序名称：TinyPlane
 // 作者：YangHong
-// 编译环境：Visual Studio 2019 / Easy2D v2.1.5
+// 编译环境：Visual Studio 2019 / Easy2D v2.1.12
 // 项目类型：Win32 Application
 //---------------------------------------------------------
 
@@ -12,7 +12,7 @@ using namespace easy2d;
 
 int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
 {
-	if (Game::init(L"TinyPlane", 400, 400))
+	if (Game::init("TinyPlane", 400, 400))
 	{
 		auto gs = gcnew GameScene();
 		SceneManager::enter(gs);
